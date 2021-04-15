@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="1.jpg" alt="" class="image">
+  <header>
+    <a href="#" class="logo">Ramadan</a>
+    <ul class="nav">
+      <li><a href="#" style="--i:1;" class="active">Home</a></li>
+      <li><a href="#" style="--i:2;">About</a></li>
+      <li><a href="#" style="--i:3;">Calender</a></li>
+      <li><a href="#" style="--i:4;">Blog</a></li>
+      <li><a href="#" style="--i:5;">Contact</a></li>
+    </ul>
+  </header>
+  <div class="toggle"></div>
+  <div class="content">
+    <h2>Happy Ramadan Kareem</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna
+      aliqua. ut enim ad minim veniam.
+    </p>
+    <a href="#">Read More</a>
+  </div>
+  <ul class="link">
+    <li><a href="#" style="--j:1;"><img src="facebook.png" alt=""></a></li>
+    <li><a href="#" style="--j:2;"><img src="twitter.png" alt=""></a></li>
+    <li><a href="#" style="--j:3;"><img src="instagram.png" alt=""></a></li>
+  </ul>
+
+  <script>
+    const toggle = document.querySelector(".toggle");
+    const nav = document.querySelector(".nav");
+    toggle.onclick = function() {
+      toggle.classList.toggle("active");
+      nav.classList.toggle("active");
+    };
+  </script>
+</body>
+</html>
